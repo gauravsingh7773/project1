@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1_project</title>
+    <link rel="icon" href="images/icon.jpg" />
+    <link rel="stylesheet" href="Home.css" class="rel" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-height:700px )"
+      href="Home_mob.css"
+    />
+    <!--Including this because we want to make responsive website -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     -->
+
+    <!-- <script src="Home.js"></script> -->
+  </head>
+  <body>
+    <!-- for head section -->
+    <nav id="navbar">
+      <div id="logo">
+        <!-- <img src="images/img3.jpg" alt="pintukrgupta.com"> -->
+        <i>Your Money </i>
+      </div>
+      <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#about">About</a></li>
+        <li class="item"><a href="#markets">Markets</a></li>
+        <li class="item"><a href="#news">News</a></li>
+        <li class="item"><a href="#index fund">Index fund</a></li>
+        <li class="item"><a href="#contact">contact us</a></li>
+        <li class="item"><a href="#know More">Know More</a></li>
+        <!-- <div class="search" >
+             <input type="text" name="search" id="myInput" onkeyup="searchFun()"class="searchbar"  placeholder="Search here">
+             <button type="submit"><i class="fa fa-search"></i></button>
+         </div> -->
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+        <a href="loginpage.html" class="login" id="button">Login</a>
+        <a href="register.html" class="signup" id="signbutton">Sign up</a>
+      </ul>
+    </nav>
+    <!-- For home section  -->
+    <div id="home"></div>
+
+    <!-- for upper gain and lowest down -->
+    <section id="client-section">
+      <span><h2 class="center">Highest gain today</h2></span>
+
+      <div id="clients">
+        <div class="client-item">
+          <img src="apple.png" alt="xyz" />
+        </div>
+        <div class="client-item">
+          <img src="micro.png" alt="xyz" />
+        </div>
+        <div class="client-item">
+          <img src="apple.png" alt="fhs" />
+        </div>
+        <div class="client-item">
+          <img src="micro.png" alt="efh" />
+        </div>
+      </div>
+    </section>
+
+    <!-- .......  -->
+    <caption>
+      <h3 style="margin-left: 30px">Nifty 50 companies</h3>
+    </caption>
+    <table id="stockslist">
+      <tr>
+        <th>#</th>
+        <th>Stocks</th>
+        <th>open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>P/E Ratio</th>
+        <th>Market Cap.</th>
+        <th>Last 1 Month</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td class="company"> <a href="https://www.bseindia.com/stock-share-price/reliance-industries-ltd/reliance/500325/" style=" text-decoration: none;">Reliance Industries ltd</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">Graph</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HDFCBANK" style="text-decoration: none;">Hdfc bank ltd</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=INFY" style="text-decoration:none;">infosys ltd</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      
+      <tr>
+        <td>4.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HDFC" style="text-decoration: none;">Hdfc</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=ICICIBANK" style="text-decoration: none;">ICICIBANK Ltd</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td class="company">Tata Consultancy Service Ltd</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=KOTAKBANK" style="text-decoration:none;">Mahindra Bank Ltd</a>  </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HINDUNILVR" style="text-decoration: none;">Hindustan Unilever Ltd</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=ITC" style="text-decoration: none;">ITC Ltd</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=LT" style="text-decoration: none;">LT</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=BAJFINANCE" style="text-decoration: none;">Bajaj Finance Ltd</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=AXISBANK" style="text-decoration: none;">AxisBank Ltd</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=SBIN" style="text-decoration: none;">State Bank Of India</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=BHARTIARTL" style="text-decoration: none;">BHARTIARTL</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=ASIANPAINT" style="text-decoration: none;">Asian Paints Ltd</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>16.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HCLTECH" style="text-decoration: none;">HCLTECH</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>17.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=BAJAJFINSV" style="text-decoration: none;">BAJAJFINSV Ltd</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>18.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=TATASTEEL" style="text-decoration: none;">TATA Steal Ltd</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>19.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=MARUTI" style="text-decoration: none;"> MarutiSuziki India Ldt</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=WIPRO" style="text-decoration: none;">WIPRO</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>21.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=TITAN" style="text-decoration: none;">TITAN</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>22.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=SUNPHARMA" style="text-decoration: none;">SUNPHARMA</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>23.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=ULTRACEMCO" style="text-decoration: none;">ULTRACEMCO</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>24.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=TECHM" style="text-decoration: none;">TECHM</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>25.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=M%26M" style="text-decoration: none;">MAHINDRA AND MAHINDRA</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>26.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HINDALCO" style="text-decoration: none;">HINDALCO</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>27.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=NESTLEIND" style="text-decoration: none;">NESTLEIND</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>28.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=INDUSINDBK" style="text-decoration: none;">INDUSINDBK</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>29.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HDFCLIFE" style="text-decoration: none;">HDFCLIFE</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>30.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=NTPC" style="text-decoration: none;">NTPC</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>31.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=JSWSTEEL" style="text-decoration: none;">JSWSTEEL</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>32.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=POWERGRID" style="text-decoration: none;">POWERGRID</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>33.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=GRASIM" style="text-decoration: none;">GRASIM</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>34.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=DIVISLAB" style="text-decoration: none;">DIVISLAB</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>35.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=DRREDDY" style="text-decoration: none;">DRREDDY</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>36.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=TATAMOTORS" style="text-decoration: none;">TATAMOTORS</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>37.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=ADANIPORTS" style="text-decoration: none;">ADANIPORTS</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>38.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=SBILIFE" style="text-decoration: none;">SBILIFE</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>39.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=IOC" style="text-decoration: none;">IOC</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>40.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=BAJAJ-AUTO" style="text-decoration: none;">Bajaj</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>41.</td>
+        <td class="companycompany"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=CIPLA" style="text-decoration: none;">CIPLA</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="companycompany">P/E</td>
+      </tr>
+      <tr>
+        <td>42.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=TATACONSUM" style="text-decoration: none;">TATACONSUM</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>43.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=BRITANNIA" style="text-decoration: none;">BRITANNIA</a> </td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>44.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=BPCL" style="text-decoration: none;">BPCL</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>45.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=UPL" style="text-decoration: none;">UPL</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>46.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=EICHERMOT" style="text-decoration: none;">EICHERMOT</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>47.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=COALINDIA" style="text-decoration: none;">COALINDIA</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>48.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=SHREECEM" style="text-decoration: none;">SHREECEM</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>49.</td>
+        <td class="company"><a href="https://www1.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol=HEROMOTOCO" style="text-decoration: none;">HEROMOTOCO</a></td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+      <tr>
+        <td>50.</td>
+        <td class="company">Indian Oil Corporation Ltd.</td>
+        <td class="tabledata">Price</td>
+        <td class="tabledata">Market Cap</td>
+        <td class="tabledata">P/E</td>
+        <td class="tabledata">Last 1 Month</td>
+        <td class="tabledata">Market Data</td>
+        <td class="company">P/E</td>
+      </tr>
+    </table>
+    <!-- ........  -->
+    <!-- for list of company  -->
+    <div id="table_div">
+      <caption>
+        <strong> &nbsp&nbsp&nbsp&nbsp&nbsp Nifty 50 companies </strong>
+      </caption>
+      <table id="tstyle">
+        <tr class="thstyle">
+         
+      </table>
+    </div>
+    <!-- for services section -->
+    <section class="services-container">
+      <h1 class="h-primary center">Your invested stock performance</h1>
+      <!-- Center class automaticaly center the text -->
+      <div id="services">
+        <div class="box">
+          <img src="cloth1.jpg" alt="" />
+          <h2 class="h-secondry center">Tata Motors</h2>
+          <p>You wanted it for long term investment</p>
+        </div>
+        <div class="box">
+          <img src="4.jpg" alt="" />
+          <h2 class="h-secondry center">IRCTC</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="3.jpg" alt="" />
+          <h2 class="h-secondry center">Your favorite</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+            cumque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <h1 class="h-primary center">Contact us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">email</label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">phone </label>
+            <input
+              type="phone"
+              name="name"
+              id="phone"
+              placeholder="Enter your phone no"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Comment anything</label>
+            <textarea name="message" id="message" cols="10" rows="4"></textarea>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- footer area  -->
+    <footer>
+      <div class="center">
+        copyright &copy; www.guptafashion.com All right reserved. Website is
+        design by Pintu Kr Gupta
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myUL");
+        tr = tr.getElementsByTagName("tr");
+        for (i = 0; i < li.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

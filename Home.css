@@ -1,0 +1,267 @@
+/* Css reset */
+*{
+    margin:0px;
+    padding: 0;
+}
+/* Css variable */
+:root{
+    --navbar-height:59px;  /* To learn */
+}
+html{
+ scroll-behavior:smooth; /* Means after clicking on the navbar smooth scrolling happen
+    if we don't use this then scrolling directly and move to that page  */
+}
+/* 1.styling Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;  /* For setting sticky means navbar will sticky that means not move if we scroll */
+    top: 0px;
+    height:50px;
+    background-color: rgb(31, 25, 25);
+    border: 1px solid rgb(37, 9, 9) ;
+    border-radius:2px;
+}
+/* styling for logo and Image */
+#logo{
+    margin: 2px 10px;
+    color:rgb(243, 13, 128);
+}
+
+
+/* Styling for list */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    color: white;
+    list-style:none;
+    font-size:1.3rem ;
+}
+#navbar ul li a{
+    color: white;
+     display: block;   /* bydefault inline hoti hai  */
+     padding: 3px 20px;
+     border-radius:20px;
+     margin: 0px 10px;
+     text-decoration:none; 
+}
+#navbar li a:hover{
+    color:rgb(134, 23, 23);
+    background-color:white;
+}
+/* ..................styling for Search bar................ */
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 50%;
+    height: 40%;
+    border-radius: 4px;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 15%;
+    height: 93%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+/* ........................................... */
+.login{
+    color: white;
+    margin-top: 10px;
+    margin-left: 100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login:hover{
+    color:rgb(134, 23, 23);
+    background-color:white;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+ .signup{
+    background-color:white;
+    padding: 1px 4px;
+    height:30px;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.signup:hover{
+    color: white;
+    background-color: grey;
+}
+
+
+/* 2. Now we style home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:2px 50px;
+    height: 5px;   /* Ye wala higth ham isliye badhaye hai kyuki service wala section niche aa jayega home section se */
+    justify-content:center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background-color: rgb(158, 179, 172);
+    /* Note: Above we take "../" because we are in css folder
+    and we have to go outside of this folder for image*/
+    position: absolute;
+    height:50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.40;
+}
+#home p{
+    color: rgb(145, 89, 89);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'bree serif',serif;
+}
+/* high performance stocks */
+#client-section{
+    height: 144px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../client.jpg');
+    width: 100%;
+    height: 46%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 100px;
+    padding: 2px;
+}
+.client-item{
+    padding: 34px;
+}
+
+
+/* Styling for new table data  */
+#stockslist {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+.company{
+    cursor: pointer;
+}
+  
+  #stockslist td, #stockslist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-right: 50px;
+  }
+  
+  #stockslist tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #stockslist tr:hover {background-color: #ddd;}
+
+#stockslist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+/* 3.styling for services section */
+.services-container{
+    background:url(../imgp.jpg) no-repeat center center/cover;
+}
+#services{
+    margin: 0px;
+    display: flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding: 10px;
+    margin: 25px 5px;
+    border-radius:10px;
+    background-color: rgb(207, 200, 200);
+    margin-top: 1px;
+}
+#services .box img{
+    height: 150px;
+    width: 200px;
+     margin: auto; /* this will only work when display is block */
+     display: block;  /* The photo in the cloth ordering block will appear in center */
+}
+
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../contact.jpg") no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+     padding: 0.5rem;/* padding inside the block will increase */
+     border-radius: 9px;
+}
+#contact-box form{
+    width:50%;  /*Increase form size */
+}
+/* footer class */
+footer{
+    background: black;
+    color : white;
+    padding : 12px 50px;
+}
+/* Utility class for styling section*/
+.h-primary{
+    font-family: 'Bree Serif',serif;
+    font-size:2.2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size:2.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+
